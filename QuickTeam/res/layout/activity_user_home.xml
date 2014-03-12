@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserHomeActivity" >
+
+    <TextView
+        android:id="@+id/userTaskTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userTaskTitleLbl"
+        android:layout_alignBottom="@+id/userTaskTitleLbl"
+        android:layout_alignRight="@+id/subTaskTwoLbl"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="-------------------------------------------"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/listOfTasksTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/userTaskTitleTxt"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="32dp"
+        android:text="Sub task 1:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/editTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addNewTask"
+        android:layout_alignRight="@+id/addNewTask"
+        android:onClick="editTask"
+        android:text="Edit" />
+
+    <ProgressBar
+        android:id="@+id/oneProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listOfTasksTitleLabel"
+        android:layout_below="@+id/listOfTasksTitleLabel"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/subTaskTwoLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/subTaskThreeLbl"
+        android:layout_below="@+id/textView2"
+        android:text="-------------------------------------------------------------------"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/subTaskOneLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/oneProgressBar"
+        android:layout_alignRight="@+id/oneProgressBar"
+        android:layout_below="@+id/listOfTasksTitleLabel"
+        android:text="------------------------------------------------------"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ProgressBar
+        android:id="@+id/twoProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subTaskTwoLbl"
+        android:layout_alignRight="@+id/subTaskTwoLbl"
+        android:layout_below="@+id/subTaskTwoLbl" />
+
+    <Button
+        android:id="@+id/addNewTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/subTaskThreeLbl"
+        android:text="Add Task" />
+
+    <TextView
+        android:id="@+id/userTaskInProgressLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addNewTask"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Task in progress"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/userTaskTitleLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listOfTasksTitleLabel"
+        android:layout_below="@+id/userTaskInProgressLbl"
+        android:layout_marginTop="14dp"
+        android:text="Title :"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/listOfTasksTitleLabel"
+        android:layout_below="@+id/oneProgressBar"
+        android:layout_marginTop="23dp"
+        android:text="Sub task 2: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/twoProgressBar"
+        android:layout_marginTop="24dp"
+        android:text="Sub task 3:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/subTaskThreeLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/oneProgressBar"
+        android:layout_below="@+id/textView3"
+        android:text="----------------------------------------------------------"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ProgressBar
+        android:id="@+id/threeProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subTaskThreeLbl"
+        android:layout_below="@+id/subTaskThreeLbl" />
+
+</RelativeLayout>
