@@ -31,8 +31,7 @@ public class EntryActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_entry);
-        
+        setContentView(R.layout.activity_entry);       
         initUi();
         bind();
     }
@@ -43,7 +42,7 @@ public class EntryActivity extends Activity {
 			
 			@Override
 			public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
-				 
+				 /* Need some implementation here*/
 			}
 			
 			@Override
